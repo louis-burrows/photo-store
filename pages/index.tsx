@@ -11,6 +11,13 @@ import NavBar from "../Components/NavBar/NavBar"
 
 
 export default function Home() {
+
+  const {isNavShowing, toggleTheNavbar} = "";
+
+  const toggleNav = () => {
+    
+  }
+
   return (
     <div>
 
@@ -20,18 +27,14 @@ export default function Home() {
       </Head>
 
       <main>
-
-        <NavBar />
-
+        <NavBar toggleNav={isNavShowing}/>
         <h1>
           Dolinska Photography
         </h1>
 
-        <button>Toggle NavBar</button>
-
-
+        <button onClick={() => toggleNav()}>Toggle NavBar</button>
       </main>
 
     </div>
-  )
-}
+  );
+};
